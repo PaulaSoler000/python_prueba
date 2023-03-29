@@ -70,7 +70,7 @@ print(my_dict.items()) # listado de cada uno de los items
 print(my_dict.keys()) # solo nos retorna las claves
 print(my_dict.values()) # solo nos retorna los valores
 
-my_list = ["Nombre", 1, "Piso"]
+my_list = ["Nombre", 1, "Pisa"]
 
 
 
