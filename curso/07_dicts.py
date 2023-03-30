@@ -77,14 +77,18 @@ my_list = ["Nombre", 1, "Pisa"]
 
 my_new_dict = dict.fromkeys((my_list))
 print(my_new_dict)
-
 my_new_dict = dict.fromkeys((my_dict))
 print(my_new_dict)
-
-my_new_dict = dict.fromkeys(my_dict, "Soler")
+my_new_dict = dict.fromkeys(my_dict, "Soler") # pondrá el valor en todas las claves
 print((my_new_dict))
 
-print(list(my_new_dict)) # solo se obtendrán las claves
+my_values = my_new_dict.values()
+print(type(my_values))
 
+print(list(my_new_dict)) # solo se obtendrán las claves
+print(my_new_dict.values())
+print(list(dict.fromkeys(list(my_new_dict.values())).keys()))
+print(tuple(my_new_dict))
+print(set(my_new_dict))
 
 
