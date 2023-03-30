@@ -70,7 +70,21 @@ print(my_dict.items()) # listado de cada uno de los items
 print(my_dict.keys()) # solo nos retorna las claves
 print(my_dict.values()) # solo nos retorna los valores
 
+my_new_dict = dict.fromkeys(("Nombre", 1, "Pisa"))
+print(my_new_dict)
+
 my_list = ["Nombre", 1, "Pisa"]
+
+my_new_dict = dict.fromkeys((my_list))
+print(my_new_dict)
+
+my_new_dict = dict.fromkeys((my_dict))
+print(my_new_dict)
+
+my_new_dict = dict.fromkeys(my_dict, "Soler")
+print((my_new_dict))
+
+print(list(my_new_dict)) # solo se obtendrán las claves
 
 
 
