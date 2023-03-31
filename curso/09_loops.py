@@ -18,7 +18,7 @@ while my_condition < 20:
     my_condition += 1
     if my_condition == 15:
         print("Se detiene la ejecución, mi ejecución es 15")
-        break # detiene el bucle
+        break  # detiene el bucle
     print(my_condition)
 
 print("La ejecución continúa")
