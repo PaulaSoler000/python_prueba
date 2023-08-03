@@ -141,7 +141,7 @@ def comprobar_ceros(codigo):
 # group by
 
 
-# comprobar que una columna existe
+# comprobar que una columna existe en la lista de columnas
 if "identificador cce" in excel.columns:
     excel['hay cce'] = True
 else:
