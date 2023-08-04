@@ -149,3 +149,7 @@ else:
 
 # Paramos todas las columnas a minúsculas
 excel.columns = map(str.lower, excel.columns)
+
+# lambda complejo
+nominas_dos['HORAS'] = nominas_dos.apply(
+    lambda row: self._recalcular_promedio_horas(row, nominas) if row['duplicada'] == True else row['HORAS'], axis=1)
