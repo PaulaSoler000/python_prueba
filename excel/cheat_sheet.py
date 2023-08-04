@@ -147,3 +147,5 @@ if "identificador cce" in excel.columns:
 else:
     excel['hay cce'] = False
 
+# Paramos todas las columnas a minúsculas
+excel.columns = map(str.lower, excel.columns)
