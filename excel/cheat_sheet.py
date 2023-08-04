@@ -153,3 +153,9 @@ excel.columns = map(str.lower, excel.columns)
 # lambda complejo
 nominas_dos['HORAS'] = nominas_dos.apply(
     lambda row: self._recalcular_promedio_horas(row, nominas) if row['duplicada'] == True else row['HORAS'], axis=1)
+
+# LAMBDA POR FILAS
+# listado_completo_codigos['colum'] = listado_completo_codigos.apply(lambda row: 'hola' if row[col_m] == '' or row[col_o] == '' else 'adios', axis=1)
+
+# LAMBDA POR COLUMNAS
+# listado_completo_codigos['colum'] = listado_completo_codigos[[col_m, col_o]].apply(lambda row: True if row[0] == '' and row[1] == '' else False)
