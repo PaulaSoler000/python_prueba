@@ -159,3 +159,8 @@ nominas_dos['HORAS'] = nominas_dos.apply(
 
 # LAMBDA POR COLUMNAS
 # listado_completo_codigos['colum'] = listado_completo_codigos[[col_m, col_o]].apply(lambda row: True if row[0] == '' and row[1] == '' else False)
+
+# para que todas las filas de su mismo grupo que estan vacias cojan el mismo dato principal
+# df.fillna(method= 'ffill')
+# lo mismo pero desde el final
+# df.fillna(method= 'bfill')
