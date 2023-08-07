@@ -164,3 +164,6 @@ nominas_dos['HORAS'] = nominas_dos.apply(
 # df.fillna(method= 'ffill')
 # lo mismo pero desde el final
 # df.fillna(method= 'bfill')
+
+# comprobar columna si esta completamente vacia
+# col_unidades_vacias: bool = excel_nominas[col_m].eq('').all()
