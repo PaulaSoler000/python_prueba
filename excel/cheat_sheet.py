@@ -147,8 +147,9 @@ if "identificador cce" in excel.columns:
 else:
     excel['hay cce'] = False
 
-# Paramos todas las columnas a minúsculas
+# Pasamos todas las columnas a minúsculas
 excel.columns = map(str.lower, excel.columns)
+adicional.columns = map(lambda x: x.lower(), adicional.columns)
 
 # lambda complejo
 nominas_dos['HORAS'] = nominas_dos.apply(
