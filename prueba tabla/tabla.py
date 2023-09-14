@@ -23,9 +23,9 @@ class TableWidget(QTableWidget):
     def __init__(self, df):
         super().__init__()
         self.df = df
-        self.setStyleSheet('font-size: 20px;')
+        self.setStyleSheet('font-size: 15px;')
 
-        # set table dimension
+        # dar dimensiones
         nRows, nColumns = self.df.shape
         self.setColumnCount(nColumns)
         self.setRowCount(nRows)
@@ -36,7 +36,7 @@ class TableWidget(QTableWidget):
 
         self.setItemDelegateForColumn(1, FloatDelegate())
 
-        # data insertion
+        # insercion
         for i in range(self.rowCount()):
             for j in range(self.columnCount()):
                 self.setItem(i, j, QTableWidgetItem(str(self.df.iloc[i, j])))
@@ -58,7 +58,7 @@ class DFEditor(QWidget):
 
     def __init__(self):
         super().__init__()
-        self.resize(800, 500)
+        self.resize(600, 400)
 
         mainLayout = QVBoxLayout()
 
@@ -66,12 +66,12 @@ class DFEditor(QWidget):
         mainLayout.addWidget(self.table)
 
         button_print = QPushButton('hacer print')
-        button_print.setStyleSheet('font-size: 20px')
+        button_print.setStyleSheet('font-size: 15px')
         button_print.clicked.connect(self.print_DF_Values)
         mainLayout.addWidget(button_print)
 
         button_export = QPushButton('Exportar a CSV')
-        button_export.setStyleSheet('font-size: 20px')
+        button_export.setStyleSheet('font-size: 15px')
         button_export.clicked.connect(self.export_to_csv)
         mainLayout.addWidget(button_export)
 
@@ -91,4 +91,4 @@ if __name__ == '__main__':
     demo = DFEditor()
     demo.show()
 
-    app.exec_()
+    app.exec()
