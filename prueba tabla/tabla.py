@@ -90,5 +90,4 @@ if __name__ == '__main__':
 
     demo = DFEditor()
     demo.show()
-
     app.exec()
